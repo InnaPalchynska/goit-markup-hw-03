@@ -19,6 +19,7 @@ body {
 }
 
 h1 {
+  margin: 0px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -30,6 +31,7 @@ h1 {
 }
 
 h2 {
+  margin: 0px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -43,11 +45,22 @@ h2 {
 
 .list {
   list-style: none;
+  margin: 0px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 
 /* logo */
 
 .logo {
+  margin-right: 92px;
   font-family: var(--logo-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -60,13 +73,40 @@ h2 {
 }
 
 /* site-nav */
+.header {
+  display: flex;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item {
+  outline: 1px solid red;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+
+  cursor: pointer;
 }
 
 .site-nav .link:hover,
@@ -82,10 +122,26 @@ h2 {
   color: inherit;
 }
 
+.site-nav.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
 /* hero */
 
 .hero {
   background-color: var(--accent-bg-color);
+  height: 600px;
+}
+
+.hero-title {
+  display: block;
+  padding-top: 200px;
+}
+
+.hero.button {
+  display: block;
+  margin: 30px auto 200px;
 }
 
 /* button */
