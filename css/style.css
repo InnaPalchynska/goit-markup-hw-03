@@ -39,6 +39,10 @@ h2 {
   color: var(--title-text-color);
 }
 
+h3 {
+  margin: 0px;
+}
+
 .link {
   text-decoration: none;
 }
@@ -144,7 +148,6 @@ h2 {
 }
 
 .hero-title {
-  display: block;
   padding-top: 200px;
 }
 
@@ -214,7 +217,7 @@ h2 {
   display: flex;
 }
 
-.work-image {
+.work.item {
   margin-left: auto;
   margin-right: 30px;
   margin-bottom: 94px;
@@ -229,9 +232,39 @@ h2 {
   text-align: center;
 }
 
-.team.title {
+.team-heading {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.team.list {
+  display: flex;
+}
+
+.team-item {
+  margin-bottom: 94px;
+  margin-left: auto;
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.team-title {
+  outline: red 1px solid;
+  margin-top: 30px;
+  background-color: transparent;
   font-weight: 500;
   color: var(--title-text-color);
+}
+
+.team-description {
+  margin: 10px auto 30px;
 }
 
 /* footer */
@@ -241,9 +274,25 @@ h2 {
   color: var(--primary-bg-color);
 }
 
-.footer .contacts {
+.logo.footer {
+  display: block;
+  padding-top: 60px;
+}
+
+.footer.contacts {
+  margin-top: 20px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer.contacts > li:not(:last-child) {
+  outline: solid 1px tomato;
+  margin-bottom: 9px;
+}
+
+.footer.contacts > li:last-child {
+  outline: solid 1px tomato;
+  padding-bottom: 60px;
 }
 
 address {
