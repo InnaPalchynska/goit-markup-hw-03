@@ -67,7 +67,6 @@ h3 {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 /* logo */
@@ -98,10 +97,6 @@ h3 {
 
 .site-nav {
   display: flex;
-}
-
-.site-nav .item {
-  outline: 1px solid red;
 }
 
 .site-nav .item:not(:last-child) {
@@ -174,6 +169,8 @@ h3 {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  cursor: pointer;
 }
 
 /* features */
@@ -189,11 +186,6 @@ h3 {
 
 .features.list:not(:last-child) {
   margin-right: 30px;
-  outline: red 1px solid;
-}
-
-.features.list {
-  outline: red 1px solid;
 }
 
 .features .title {
@@ -257,7 +249,6 @@ h3 {
 }
 
 .team-title {
-  outline: red 1px solid;
   margin-top: 30px;
   background-color: transparent;
   font-weight: 500;
@@ -287,12 +278,10 @@ h3 {
 }
 
 .footer.contacts > li:not(:last-child) {
-  outline: solid 1px tomato;
   margin-bottom: 9px;
 }
 
 .footer.contacts > li:last-child {
-  outline: solid 1px tomato;
   padding-bottom: 60px;
 }
 
@@ -314,7 +303,6 @@ address {
 }
 
 .filter-btn {
-  outline: solid 1px yellow;
   margin-left: auto;
   font-family: Roboto;
   font-weight: 500;
@@ -328,6 +316,8 @@ address {
   border-radius: 4px;
 
   border: none;
+
+  cursor: pointer;
 }
 
 .filter-btn:hover,
@@ -344,7 +334,6 @@ address {
 }
 
 .portfolio .item {
-  outline: teal 1px solid;
   margin-right: 30px;
   margin-bottom: 30px;
 }
