@@ -351,12 +351,16 @@ address {
 }
 
 .portfolio .item {
+  outline: 1px solid #eeeeee;
+  background-color: var(--primary-bg-color);
   margin-right: 30px;
   margin-bottom: 30px;
+  margin-top: auto;
+  margin-left: auto;
 }
 
 .portfolio .item:nth-child(3n) {
-  margin: 0px;
+  margin-right: 0px;
 }
 
 .portfolio .item:nth-last-child(-n + 3) {
@@ -364,7 +368,7 @@ address {
 }
 
 .project {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .portfolio .title {
